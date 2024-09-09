@@ -12,7 +12,7 @@ public class DivingPlayerState : IPlayerState
     {
         Debug.Log("Entering State: Diving");
         rbPlayer = player.GetComponent<Rigidbody>();
-        rbPlayer.AddForce(0, -10000 * Time.deltaTime, 0, ForceMode.VelocityChange);
+        rbPlayer.AddForce(0, -5000 * Time.deltaTime, 0, ForceMode.VelocityChange);
         player.mCurrentState = this;
     }
 
